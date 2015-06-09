@@ -1,4 +1,8 @@
 class EntriesController < ApplicationController
+  # Clearance action
+  before_action :require_login, except: [:index, :show]
+
+  # entries action
   before_action :set_entry, only: [:show, :edit, :update, :destroy]
 
   # GET /entries
