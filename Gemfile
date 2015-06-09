@@ -4,7 +4,7 @@ gem 'rails', '4.2.0'
 gem 'sqlite3'
 gem 'simple_form'
 gem 'haml_rails'
-
+gem 'clearance'
 # Assets
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
