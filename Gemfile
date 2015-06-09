@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
-gem 'pg'
+gem 'sqlite3'
 gem 'simple_form'
 gem 'haml_rails'
 
