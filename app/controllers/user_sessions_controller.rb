@@ -11,7 +11,7 @@ class UserSessionsController < ApplicationController
 
     respond_to do |format|
       if @user_session.save
-        format.html { redirect_to @user_session, notice: 'User session was successfully created.' }
+        format.html { redirect_to root_path, notice: 'User session was successfully created.' }
         format.json { render :show, status: :created, location: @user_session }
       else
         format.html { render :new }
@@ -46,7 +46,7 @@ class UserSessionsController < ApplicationController
   end
 
   private
-    
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_session_params
       params.require(:user_session).permit(:username, :password)
